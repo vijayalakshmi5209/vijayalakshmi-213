@@ -1,4 +1,4 @@
-/*To reverse the array*?
+/*To reverse the array*/
 #include<stdio.h>
 int main()
 {
