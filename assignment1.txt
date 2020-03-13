@@ -1,0 +1,40 @@
+ALGORITHM:
+step 1: start
+step 2: since o(n) is the complexity,fetching the size(s).
+step 3: to get the array of size(s).
+step 4:  considering two integers i and j.
+step 5: i is initialized from 0 and j is initialized to the last element.
+step 6: element of i is stored to temp, element of j is stored to i and element of temp is stored to j.(swapping elements).
+step 7: i is incremented and j is decremented.
+step 8:  if  i is less than j, step 6 is repeated.
+step 9:  the reversed array is printed.
+step 10: end
+
+PROGRAM:
+#include<stdio.h>
+int main()
+{
+int s;
+printf("Enter the size:");
+scanf("%d",&s);//since it has to be in o(n) complexity, fetching the size.
+int a[100],i,j,temp;
+for(i=0;i<size;i++)
+{
+scanf("%d",&a[i]);//to get the array.
+}
+j=s-1;
+i=0;
+while(i<j)//so that the order is not repeated.
+{
+ temp=a[i];
+ a[i]=a[j];
+ a[j]=temp;
+ i++;
+ j--;
+}
+printf("Reversed array is:");
+for(i=0;i<size;i++)
+{
+ printf("%d",a[i]);
+}
+return 0;
